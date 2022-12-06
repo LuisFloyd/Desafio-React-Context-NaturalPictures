@@ -19,7 +19,7 @@ export default function Home() {
                                     className="foto"
                                     style={{backgroundImage: `url(${dato.src.tiny})`}}
                               >
-                                <Heart  filled = {dato.liked}  id = {dato.id} liked = {dato.liked} />
+                                <Heart  filled = {dato.liked} id = {dato.id} />
                                 <p>{dato.alt}</p>
                               </div>
                             ))}
