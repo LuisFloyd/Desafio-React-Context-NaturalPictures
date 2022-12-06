@@ -14,6 +14,9 @@ export default function Home() {
     setFotos(nuevoListado)
   }
 
+  // Utilicé esta función clickHeart, para no interferir el componente Heart. Así el componente Heart puede ser utilizado por otros componentes,
+  // y no quedar amarrado a modificar exclusivamente el dato liked de las fotos.
+
   return (
     <div className="galeria grid-columns-5 p-3">
       {fotos.map((dato) => (  <div  key={dato.id}
